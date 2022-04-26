@@ -1,4 +1,4 @@
-# test
+# Test repo for unknown readers
 
 ## Part 1: litecoin 
 It contains:
@@ -7,8 +7,11 @@ It contains:
 - A pipeline manifest gitlab-ci.yaml
 
 ## Part 2: Text manipulation
-A show case beween bash (script) and go (code)
+A show case between bash (script) and go (code)
+[more details here](./text-manipulation/Readme.md)
 
 
 ## Part 3: Therefore IAM
 AWS role & policy showcase with Terraform
+[more details here](./iam-management/Readme.md)
+
