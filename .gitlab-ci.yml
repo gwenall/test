@@ -36,34 +36,10 @@ docker_build:
 
 sast:
   stage: scan
-
-# kube_deploy:
-#   stage: deploy
-#   allow_failure: false
-#   # variables:
-#   #   PATH: "./deploy/"
-#   #   NAMESPACE: "test"
-#   # image: 
-#   #   name: bitnami/kubectl:1.22.9-debian-10-r5
-#   #   entrypoint: ["/bin/sh"]
-#   # before_script:
-#   #   # getting secret from gitlab variables
-#   #   - mkdir -p $HOME/.kube && echo $KUBE_CONFIG_DEV_GITLAB_USER | base64 -d > $HOME/.kube/config && chmod go-rwx $HOME/.kube/config
-#   # script:
-#   #   - kubectl -n $NAMESPACE apply -f $PATH
-#   image:
-#      name: bitnami/kubectl:latest
-#      entrypoint: [""]
-#   variables:
-#     KUBE_CONTEXT: my-context # The name to use for the new context
-#     AGENT_ID: 1234 # replace with your agent's numeric ID
-#     K8S_PROXY_URL: wss://kas.gitlab.com/k8s-proxy/ # replace with your agent server (KAS) Kubernetes proxy URL
-#     # ... any other variables you have configured
-#   before_script:
-#   - kubectl config set-credentials agent:$AGENT_ID --token="ci:${AGENT_ID}:${CI_JOB_TOKEN}"
-#   - kubectl config set-cluster gitlab --server="${K8S_PROXY_URL}"
-#   - kubectl config set-context "$KUBE_CONTEXT" --cluster=gitlab --user="agent:${AGENT_ID}"
-#   - kubectl config use-context "$KUBE_CONTEXT"
-#   script:
-#   - kubectl config get-contexts
-#   - kubectl get pods
+kube_deploy:
+  stage: deploy
+  script:
+    - echo "Deploy to test cluster"
+  environment:
+    name: gcp
+    url: https://test.my-cloud.me
