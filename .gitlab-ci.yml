@@ -44,8 +44,7 @@ docker_kaniko_trivy:
     DOCKER_REGISTRY_PASSWORD: $CI_REGISTRY_PASSWORD
     DOCKER_REGISTRY: $CI_REGISTRY
     DOCKERFILE: $CI_PROJECT_DIR/container/Dockerfile
-    TRIVY_CACHE: ${CI_PROJECT_DIR}/.cache/trivy-cache
-    TRIVY_OPTIONS: '--no-progress --cache-dir ${TRIVY_CACHE}'
+    TRIVY_OPTIONS: '--no-progress'
     TRIVY_THRESHOLD: CRITICAL
     TAR_FILE: "${CI_PROJECT_NAME}-${CI_COMMIT_SHORT_SHA}"
   script:
@@ -63,11 +62,11 @@ docker_kaniko_trivy:
     - wget -q https://github.com/aquasecurity/trivy/releases/download/v${VERSION}/trivy_${VERSION}_Linux-64bit.tar.gz
     - tar xzf trivy_${VERSION}_Linux-64bit.tar.gz && chmod +x trivy
     # generate gitlab scanning report
-    - ./trivy --input /${TAR_FILE} --exit-code 0 ${TRIVY_OPTIONS} --format template --template "@contrib/gitlab.tpl" -o gl-container-scanning-report.json
+    - ./trivy image --exit-code 0 ${TRIVY_OPTIONS} --format template --template "@contrib/gitlab.tpl" -o gl-container-scanning-report.json ${DOCKER_IMAGE}:${CI_COMMIT_SHORT_SHA}
     # show report
-    - ./trivy --input /${TAR_FILE} --exit-code 0 ${TRIVY_OPTIONS} --severity ${TRIVY_THRESHOLD}
+    - ./trivy image --exit-code 0 ${TRIVY_OPTIONS} --severity ${TRIVY_THRESHOLD} ${DOCKER_IMAGE}:${CI_COMMIT_SHORT_SHA}
     # fail on eventual vulnerabilities
-    - ./trivy --input /${TAR_FILE} ${TRIVY_OPTIONS} --exit-code 1 --severity ${TRIVY_THRESHOLD}
+    - ./trivy  image --exit-code 1 ${TRIVY_OPTIONS} --severity ${TRIVY_THRESHOLD} ${DOCKER_IMAGE}:${CI_COMMIT_SHORT_SHA}
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
