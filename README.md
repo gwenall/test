@@ -31,7 +31,7 @@ It contains:
 
 Trivy scan :
 
-![image-20220427003015966](/home/gwen/git/lab/test/container/trivy-scan.png)
+![image-20220427003015966](./container/trivy-scan.png)
 
 
 
