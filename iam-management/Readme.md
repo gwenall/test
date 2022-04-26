@@ -9,3 +9,5 @@ Then go ahead with a plan to see the changes diff:
 If you're happy with it you can apply
 
 Tip of the day: perform a `read secret_key` in order to not reveal your key in the shell history
+
+Needless to say I had to do to check the doc for some resources parameters  https://registry.terraform.io
