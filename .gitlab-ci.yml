@@ -75,14 +75,21 @@ docker_kaniko_trivy:
     reports:
       container_scanning: gl-container-scanning-report.json
 
-
 sast:
   stage: scan
 
 kube_deploy:
   stage: deploy
+  variables:
+    NAMESPACE: gitlab-agent
+  image:
+     name: bitnami/kubectl:latest
+     entrypoint: [""]
   script:
   - echo "Deploy to test cluster"
+  - kubectl config get-contexts 
+  - kubectl config use-context gwenall/test:gcp
+  - kubectl apply -n $NAMESPACE -f ./deploy
   environment:
     name: gcp
     url: https://test.my-cloud.me
