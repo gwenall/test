@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  annotations:
+    role: litecoin
+  labels:
+    app: litecoin
+  name: litecoin
+spec:
+  selector:
+    matchLabels:
+      app: litecoin
+  replicas: 1
+  serviceName: litecoin
+  template:
+    metadata:
+      labels:
+        app: litecoin
+    spec:
+      containers:
+      - image: gwenall/litecoind:0.18.1
+        imagePullPolicy: IfNotPresent 
+        name: litecoin
+        resources:
+          requests:
+            memory: 100Mi
+          limits:
+            memory: 250Mi
+        volumeMounts:
+          - name: litecoin-data
+            mountPath: /litecoin_data
+      securityContext:
+          fsGroup: 999
+      restartPolicy: Always
+  volumeClaimTemplates:
+  - metadata:
+      name: litecoin-data
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 1G
