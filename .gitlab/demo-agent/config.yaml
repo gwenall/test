@@ -1,0 +1,6 @@
+gitops:
+  manifest_projects:
+  - id: gwenall/test
+    default_namespace: gitlab-agent
+    paths:
+    - glob: 'deploy/*.yaml'
