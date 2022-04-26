@@ -1,0 +1,67 @@
+Name:         litecoin-0
+Namespace:    test
+Priority:     0
+Node:         ip-10-0-11-82.eu-west-1.compute.internal/10.0.11.82
+Start Time:   Tue, 26 Apr 2022 10:14:59 +0200
+Labels:       app=litecoin
+              controller-revision-hash=litecoin-d6bb4bd8
+              statefulset.kubernetes.io/pod-name=litecoin-0
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.0.11.201
+IPs:
+  IP:           10.0.11.201
+Controlled By:  StatefulSet/litecoin
+Containers:
+  litecoin:
+    Container ID:   docker://b48f7ee2753c1aa6d58b7c496b845e3837a94cbf6bcbab2babc7d4aa249bd853
+    Image:          gwenall/litecoind:0.18.1
+    Image ID:       docker-pullable://gwenall/litecoind@sha256:bf191965b8a8e7f4636d767b6fbc2e502ca5a9fd98957ca7651ccabbbb785230
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 26 Apr 2022 10:34:56 +0200
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 26 Apr 2022 10:15:08 +0200
+      Finished:     Tue, 26 Apr 2022 10:34:55 +0200
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      memory:  1Gi
+    Requests:
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /litecoin_data from litecoin-data (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-kc5fs (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  litecoin-data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  litecoin-data-litecoin-0
+    ReadOnly:   false
+  kube-api-access-kc5fs:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason                  Age                From                     Message
+  ----    ------                  ----               ----                     -------
+  Normal  Scheduled               37m                default-scheduler        Successfully assigned test/litecoin-0 to ip-10-0-11-82.eu-west-1.compute.internal
+  Normal  SuccessfulAttachVolume  37m                attachdetach-controller  AttachVolume.Attach succeeded for volume "pvc-e51efe1f-79bc-4d74-83de-e96793526e2b"
+  Normal  Pulled                  17m (x2 over 37m)  kubelet                  Container image "gwenall/litecoind:0.18.1" already present on machine
+  Normal  Created                 17m (x2 over 37m)  kubelet                  Created container litecoin
+  Normal  Started                 17m (x2 over 37m)  kubelet                  Started container litecoin
