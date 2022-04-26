@@ -4,7 +4,7 @@ include:
 stages:
   - build
   - scan
-  # - deploy
+  - deploy
 
 docker_build:
   stage: build
@@ -36,10 +36,11 @@ docker_build:
 
 sast:
   stage: scan
+
 kube_deploy:
   stage: deploy
   script:
-    - echo "Deploy to test cluster"
+  - echo "Deploy to test cluster"
   environment:
     name: gcp
     url: https://test.my-cloud.me
