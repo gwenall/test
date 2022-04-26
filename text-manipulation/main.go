@@ -27,8 +27,9 @@ func (r *ReleaseNotes) readFile() {
 		log.Fatal(err)
 	}
 	defer file.Close()
-	bs := bufio.NewScanner(file)
 
+	//I googled for reading the file content with bufio as I didn't recall the syntax. That allows me to then use the Scan method to read the file line by line.
+	bs := bufio.NewScanner(file)
 	for bs.Scan() {
 		r.FileContent = append(r.FileContent, bs.Text())
 	}
@@ -63,6 +64,7 @@ func (r *ReleaseNotes) subsituteContent(line string, c chan string) {
 }
 
 func main() {
+	// I saw no point to use flags here, as this program is highly specific to the text.
 	r := ReleaseNotes{"release-notes-litecoin.md", nil, nil, sync.Mutex{}}
 	r.readFile()
 
@@ -74,6 +76,7 @@ func main() {
 			matched, _ := regexp.MatchString(`<li>#.*(feature|bug)`, line)
 			if matched {
 				go r.subsituteContent(line, ch)
+				// I could have printed the content in the main function, but I wanted to show the use of channels.
 				chan_size++
 			}
 		}(line)
