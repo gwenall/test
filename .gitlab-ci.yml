@@ -43,10 +43,12 @@ kube_deploy:
   variables:
     PATH: "./deploy/"
     NAMESPACE: "test"
-  image: bitnami/kubectl:1.22.9-debian-10-r5
+  image: 
+    name: bitnami/kubectl:1.22.9-debian-10-r5
+    entrypoint: ["/bin/sh"]
   before_script:
     # getting secret from gitlab variables
     - mkdir -p $HOME/.kube && echo $KUBE_CONFIG_DEV_GITLAB_USER | base64 -d > $HOME/.kube/config && chmod go-rwx $HOME/.kube/config
   script:
-    - kubectl -n $NAMESPACE a
+    - kubectl -n $NAMESPACE apply -f $PATH
     
