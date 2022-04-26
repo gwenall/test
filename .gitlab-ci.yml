@@ -33,6 +33,49 @@ docker_build:
     DOCKER_REGISTRY: $CI_REGISTRY
     DOCKERFILE_DIR: $CI_PROJECT_DIR/container/
 
+docker_kaniko_trivy:
+  stage: scan
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  variables:
+    DOCKER_IMAGE: $CI_REGISTRY_IMAGE
+    DOCKER_REGISTRY_USER: $CI_REGISTRY_USER
+    DOCKER_REGISTRY_PASSWORD: $CI_REGISTRY_PASSWORD
+    DOCKER_REGISTRY: $CI_REGISTRY
+    DOCKERFILE: $CI_PROJECT_DIR/Dockerfile
+    TRIVY_CACHE: ${CI_PROJECT_DIR}/.cache/trivy-cache
+    TRIVY_OPTIONS: '--no-progress --cache-dir ${TRIVY_CACHE}'
+    TRIVY_THRESHOLD: CRITICAL
+    TAR_FILE: "${CI_PROJECT_NAME}-${CI_COMMIT_SHORT_SHA}"
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$DOCKER_REGISTRY\":{\"username\":\"$DOCKER_REGISTRY_USER\",\"password\":\"$DOCKER_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --cache=true --cache-repo=$CI_REGISTRY_IMAGE
+      ${DOCKER_BUILD_ARGS}
+      --context $CI_PROJECT_DIR
+      --dockerfile $DOCKERFILE
+      --tarPath=/${TAR_FILE}
+      --destination ${DOCKER_IMAGE}:${CI_COMMIT_SHORT_SHA}
+      --no-push
+    - export VERSION=$(wget -qO- "https://api.github.com/repos/aquasecurity/trivy/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+    - echo -e "${RED}Using trivy ${VERSION}${NC}"
+    - wget -q https://github.com/aquasecurity/trivy/releases/download/v${VERSION}/trivy_${VERSION}_Linux-64bit.tar.gz
+    - tar xzf trivy_${VERSION}_Linux-64bit.tar.gz && chmod +x trivy
+    # generate gitlab scanning report
+    - ./trivy --input /${TAR_FILE} --exit-code 0 ${TRIVY_OPTIONS} --format template --template "@contrib/gitlab.tpl" -o gl-container-scanning-report.json
+    # show report
+    - ./trivy --input /${TAR_FILE} --exit-code 0 ${TRIVY_OPTIONS} --severity ${TRIVY_THRESHOLD}
+    # fail on eventual vulnerabilities
+    - ./trivy --input /${TAR_FILE} ${TRIVY_OPTIONS} --exit-code 1 --severity ${TRIVY_THRESHOLD}
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - ${CI_PROJECT_DIR}/.cache
+  artifacts:
+    reports:
+      container_scanning: gl-container-scanning-report.json
+
 
 sast:
   stage: scan
