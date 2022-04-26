@@ -1,0 +1,41 @@
+[
+    {
+        "analysis_status": "analyzed",
+        "analyzed_at": "2022-04-26T07:10:15Z",
+        "annotations": {},
+        "created_at": "2022-04-26T07:08:38Z",
+        "imageDigest": "sha256:7faa2f6537dbba868190531e577772bde6874efbbd0dbbbe3898e13db2c86f20",
+        "image_content": {
+            "metadata": {
+                "arch": "amd64",
+                "distro": "ubuntu",
+                "distro_version": "22.04",
+                "dockerfile_mode": "Guessed",
+                "image_size": 95467520,
+                "layer_count": 3
+            }
+        },
+        "image_detail": [
+            {
+                "created_at": "2022-04-26T07:08:38Z",
+                "digest": "sha256:7faa2f6537dbba868190531e577772bde6874efbbd0dbbbe3898e13db2c86f20",
+                "dockerfile": "RlJPTSBzY3JhdGNoCkFERCBmaWxlOjc2ZGQ2Y2FiNTczMmIzMTI3MjI3OWJiODg2ODk1NGNiYmVjZjU5MWY1OTZmMGMzMTg1MjQ0NTRlOTVlYWJmYjkgaW4gLyAKQ01EIFsiYmFzaCJdCkxBQkVMIEF1dGhvcj1Hd2VuYWxsIFBhbnNpZXIKTEFCRUwgRGVzY3JpcHRpb249bGl0ZWNvaW5kIGNvbnRhaW5lcgpMQUJFTCBWZXJzaW9uPTAuMTguMQpFTlYgVVNFUl9OQU1FPWxpdGVjb2luX3VzZXIKRU5WIFVTRVJfSE9NRT0vbGl0ZWNvaW5fZGF0YQpDT1BZIGZpbGU6MDVhYTU4NWE5ZmY2ZTRmOGExZTNkZTNkMDhiNmFkZjg0YmRkMzhhM2YwZTE2MTc4ZjYxYmNiN2M5MWZmOTIwOCBpbiAvdXNyL2xvY2FsL2Jpbi8gClJVTiAvYmluL3NoIC1jIHVzZXJhZGQgLS1zeXN0ZW0gLS1jcmVhdGUtaG9tZSAtLWhvbWUtZGlyICRVU0VSX0hPTUUgJFVTRVJfTkFNRQpVU0VSIGxpdGVjb2luX3VzZXIKVk9MVU1FIFsvbGl0ZWNvaW5fZGF0YV0KUlVOIC9iaW4vc2ggLWMgcm0gLXJmIC92YXIvbGliL2FwdC9saXN0cy8qIC90bXAvKgpFTlRSWVBPSU5UIFsiL3Vzci9sb2NhbC9iaW4vbGl0ZWNvaW5kIl0K",
+                "fulldigest": "localhost:5000/litecoind@sha256:7faa2f6537dbba868190531e577772bde6874efbbd0dbbbe3898e13db2c86f20",
+                "fulltag": "localhost:5000/litecoind:0.18.1",
+                "imageDigest": "sha256:7faa2f6537dbba868190531e577772bde6874efbbd0dbbbe3898e13db2c86f20",
+                "imageId": "e383cd1e1acafd534421708a493a1500410d5967ce6732aca1e6156800ddd1d8",
+                "last_updated": "2022-04-26T07:10:15Z",
+                "registry": "localhost:5000",
+                "repo": "litecoind",
+                "tag": "0.18.1",
+                "tag_detected_at": "2022-04-26T07:08:38Z",
+                "userId": "admin"
+            }
+        ],
+        "image_status": "active",
+        "image_type": "docker",
+        "last_updated": "2022-04-26T07:10:15Z",
+        "parentDigest": "sha256:7faa2f6537dbba868190531e577772bde6874efbbd0dbbbe3898e13db2c86f20",
+        "userId": "admin"
+    }
+]

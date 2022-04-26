@@ -1,0 +1,814 @@
+{
+    "content": [
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "adduser",
+            "size": "608000",
+            "type": "dpkg",
+            "version": "3.118ubuntu5"
+        },
+        {
+            "license": "GPLv2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "apt",
+            "size": "4156000",
+            "type": "dpkg",
+            "version": "2.4.5"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "base-files",
+            "size": "394000",
+            "type": "dpkg",
+            "version": "12ubuntu4"
+        },
+        {
+            "license": "GPL-2 public-domain",
+            "origin": "Colin Watson <cjwatson@debian.org> (maintainer)",
+            "package": "base-passwd",
+            "size": "243000",
+            "type": "dpkg",
+            "version": "3.5.52build1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "bash",
+            "size": "1864000",
+            "type": "dpkg",
+            "version": "5.1-6ubuntu1"
+        },
+        {
+            "license": "GPL-2+ GPL-2 GPL-3+ public-domain BSD-4-clause MIT BSD-2-clause BSD-3-clause LGPL-2+ LGPL-2.1+ LGPL LGPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "bsdutils",
+            "size": "334000",
+            "type": "dpkg",
+            "version": "1:2.37.2-4ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "coreutils",
+            "size": "7112000",
+            "type": "dpkg",
+            "version": "8.32-4.1ubuntu1"
+        },
+        {
+            "license": "BSD-3-Clause FSFULLR FSFUL BSD-3-clause Expat GPL-2+ public-domain",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "dash",
+            "size": "214000",
+            "type": "dpkg",
+            "version": "0.5.11+git20210903+057cd650a4ed-3build1"
+        },
+        {
+            "license": "BSD-2-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "debconf",
+            "size": "512000",
+            "type": "dpkg",
+            "version": "1.5.79ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "debianutils",
+            "size": "243000",
+            "type": "dpkg",
+            "version": "5.5-1ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "diffutils",
+            "size": "424000",
+            "type": "dpkg",
+            "version": "1:3.8-0ubuntu2"
+        },
+        {
+            "license": "GPL-2+ GPL-2 BSD-2-clause public-domain-s-s-d public-domain-md5",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "dpkg",
+            "size": "6733000",
+            "type": "dpkg",
+            "version": "1.21.1ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "e2fsprogs",
+            "size": "1516000",
+            "type": "dpkg",
+            "version": "1.46.5-2ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "findutils",
+            "size": "620000",
+            "type": "dpkg",
+            "version": "4.8.0-1ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "gcc-12-base",
+            "size": "266000",
+            "type": "dpkg",
+            "version": "12-20220319-1ubuntu1"
+        },
+        {
+            "license": "GPL-3+ permissive LGPL-2.1+ Expat LGPL-3+ RFC-Reference TinySCHEME CC0-1.0 BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "gpgv",
+            "size": "324000",
+            "type": "dpkg",
+            "version": "2.2.27-3ubuntu2"
+        },
+        {
+            "license": "GPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "grep",
+            "size": "496000",
+            "type": "dpkg",
+            "version": "3.7-1build1"
+        },
+        {
+            "license": "GPL-3+ GFDL-1.3+-no-invariant FSF-manpages",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "gzip",
+            "size": "244000",
+            "type": "dpkg",
+            "version": "1.10-4ubuntu4"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "hostname",
+            "size": "51000",
+            "type": "dpkg",
+            "version": "3.23ubuntu2"
+        },
+        {
+            "license": "BSD-3-clause GPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "init-system-helpers",
+            "size": "133000",
+            "type": "dpkg",
+            "version": "1.62"
+        },
+        {
+            "license": "GPL-2+ LGPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libacl1",
+            "size": "67000",
+            "type": "dpkg",
+            "version": "2.3.1-1"
+        },
+        {
+            "license": "GPLv2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libapt-pkg6.0",
+            "size": "3173000",
+            "type": "dpkg",
+            "version": "2.4.5"
+        },
+        {
+            "license": "GPL-2+ LGPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libattr1",
+            "size": "57000",
+            "type": "dpkg",
+            "version": "1:2.5.1-1build1"
+        },
+        {
+            "license": "GPL-2 LGPL-2.1",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libaudit-common",
+            "size": "23000",
+            "type": "dpkg",
+            "version": "1:3.0.7-1build1"
+        },
+        {
+            "license": "GPL-2 LGPL-2.1",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libaudit1",
+            "size": "156000",
+            "type": "dpkg",
+            "version": "1:3.0.7-1build1"
+        },
+        {
+            "license": "GPL-2+ GPL-2 GPL-3+ public-domain BSD-4-clause MIT BSD-2-clause BSD-3-clause LGPL-2+ LGPL-2.1+ LGPL LGPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libblkid1",
+            "size": "323000",
+            "type": "dpkg",
+            "version": "2.37.2-4ubuntu3"
+        },
+        {
+            "license": "BSD-variant GPL-2",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libbz2-1.0",
+            "size": "100000",
+            "type": "dpkg",
+            "version": "1.0.8-5build1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libc-bin",
+            "size": "2537000",
+            "type": "dpkg",
+            "version": "2.35-0ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libc6",
+            "size": "13592000",
+            "type": "dpkg",
+            "version": "2.35-0ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libcap-ng0",
+            "size": "45000",
+            "type": "dpkg",
+            "version": "0.7.9-2.2build3"
+        },
+        {
+            "license": "BSD-3-clause GPL-2 GPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libcap2",
+            "size": "65000",
+            "type": "dpkg",
+            "version": "1:2.44-1build3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libcom-err2",
+            "size": "101000",
+            "type": "dpkg",
+            "version": "1.46.5-2ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libcrypt1",
+            "size": "225000",
+            "type": "dpkg",
+            "version": "1:4.4.27-1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libdb5.3",
+            "size": "1750000",
+            "type": "dpkg",
+            "version": "5.3.28+dfsg1-0.8ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libdebconfclient0",
+            "size": "79000",
+            "type": "dpkg",
+            "version": "0.261ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libext2fs2",
+            "size": "574000",
+            "type": "dpkg",
+            "version": "1.46.5-2ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libffi8",
+            "size": "69000",
+            "type": "dpkg",
+            "version": "3.4.2-4"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libgcc-s1",
+            "size": "140000",
+            "type": "dpkg",
+            "version": "12-20220319-1ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libgcrypt20",
+            "size": "1354000",
+            "type": "dpkg",
+            "version": "1.9.4-3ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libgmp10",
+            "size": "544000",
+            "type": "dpkg",
+            "version": "2:6.2.1+dfsg-3ubuntu1"
+        },
+        {
+            "license": "The CC0 Expat Apache-2.0 LGPLv3+_or_GPLv2+ LGPLv2.1+ GPLv3+ BSD-3-Clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libgnutls30",
+            "size": "2284000",
+            "type": "dpkg",
+            "version": "3.7.3-4ubuntu1"
+        },
+        {
+            "license": "LGPL-2.1+ g10-permissive GPL-3+ BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libgpg-error0",
+            "size": "189000",
+            "type": "dpkg",
+            "version": "1.43-3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libgssapi-krb5-2",
+            "size": "455000",
+            "type": "dpkg",
+            "version": "1.19.2-2"
+        },
+        {
+            "license": "LGPL-3+ LGPL-2+ Expat GPL-3+ GPL-2+ public-domain GPL-2 GAP",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libhogweed6",
+            "size": "336000",
+            "type": "dpkg",
+            "version": "3.7.3-1build2"
+        },
+        {
+            "license": "GPL-3+ LGPL-3+ Unicode GPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libidn2-0",
+            "size": "220000",
+            "type": "dpkg",
+            "version": "2.3.2-2build1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libk5crypto3",
+            "size": "292000",
+            "type": "dpkg",
+            "version": "1.19.2-2"
+        },
+        {
+            "license": "GPL-2+ LGPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libkeyutils1",
+            "size": "47000",
+            "type": "dpkg",
+            "version": "1.6.1-2ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libkrb5-3",
+            "size": "1052000",
+            "type": "dpkg",
+            "version": "1.19.2-2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libkrb5support0",
+            "size": "164000",
+            "type": "dpkg",
+            "version": "1.19.2-2"
+        },
+        {
+            "license": "BSD-2-clause GPL-2+ GPL-2",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "liblz4-1",
+            "size": "145000",
+            "type": "dpkg",
+            "version": "1.9.3-2build2"
+        },
+        {
+            "license": "PD probably-PD GPL-2+ LGPL-2.1+ permissive-fsf Autoconf permissive-nowarranty GPL-2 none config-h noderivs PD-debian",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "liblzma5",
+            "size": "290000",
+            "type": "dpkg",
+            "version": "5.2.5-2ubuntu1"
+        },
+        {
+            "license": "GPL-2+ GPL-2 GPL-3+ public-domain BSD-4-clause MIT BSD-2-clause BSD-3-clause LGPL-2+ LGPL-2.1+ LGPL LGPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libmount1",
+            "size": "382000",
+            "type": "dpkg",
+            "version": "2.37.2-4ubuntu3"
+        },
+        {
+            "license": "MIT/X11 X11 BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libncurses6",
+            "size": "329000",
+            "type": "dpkg",
+            "version": "6.3-2"
+        },
+        {
+            "license": "MIT/X11 X11 BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libncursesw6",
+            "size": "422000",
+            "type": "dpkg",
+            "version": "6.3-2"
+        },
+        {
+            "license": "LGPL-3+ LGPL-2+ Expat GPL-3+ GPL-2+ public-domain GPL-2 GAP",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libnettle8",
+            "size": "356000",
+            "type": "dpkg",
+            "version": "3.7.3-1build2"
+        },
+        {
+            "license": "LGPL-2.1+ LGPL-2.1 BSD-3-clause permissive-fsf permissive-makefile-in permissive-autoconf-m4-no-warranty GPL-3+-autoconf-exception permissive-configure GPL-2+-autoconf-exception MIT GPL-2+-libtool-exception permissive-autoconf-m4",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libnsl2",
+            "size": "123000",
+            "type": "dpkg",
+            "version": "1.3.0-2build2"
+        },
+        {
+            "license": "BSD-3-Clause permissive-like-automake-output ISC ISC+IBM LGPL-2.1+ Apache-2.0 same-as-rest-of-p11kit",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libp11-kit0",
+            "size": "1292000",
+            "type": "dpkg",
+            "version": "0.24.0-6build1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libpam-modules",
+            "size": "1138000",
+            "type": "dpkg",
+            "version": "1.4.0-11ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libpam-modules-bin",
+            "size": "248000",
+            "type": "dpkg",
+            "version": "1.4.0-11ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libpam-runtime",
+            "size": "312000",
+            "type": "dpkg",
+            "version": "1.4.0-11ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libpam0g",
+            "size": "235000",
+            "type": "dpkg",
+            "version": "1.4.0-11ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libpcre2-8-0",
+            "size": "621000",
+            "type": "dpkg",
+            "version": "10.39-3build1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libpcre3",
+            "size": "683000",
+            "type": "dpkg",
+            "version": "2:8.39-13build5"
+        },
+        {
+            "license": "LGPL-2.1+ LGPL-2.0+ GPL-2.0+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libprocps8",
+            "size": "131000",
+            "type": "dpkg",
+            "version": "2:3.3.17-6ubuntu2"
+        },
+        {
+            "license": "LGPL-2.1",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libseccomp2",
+            "size": "145000",
+            "type": "dpkg",
+            "version": "2.5.3-2ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libselinux1",
+            "size": "207000",
+            "type": "dpkg",
+            "version": "3.3-1build2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libsemanage-common",
+            "size": "37000",
+            "type": "dpkg",
+            "version": "3.3-1build2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libsemanage2",
+            "size": "300000",
+            "type": "dpkg",
+            "version": "3.3-1build2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libsepol2",
+            "size": "735000",
+            "type": "dpkg",
+            "version": "3.3-1build1"
+        },
+        {
+            "license": "GPL-2+ GPL-2 GPL-3+ public-domain BSD-4-clause MIT BSD-2-clause BSD-3-clause LGPL-2+ LGPL-2.1+ LGPL LGPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libsmartcols1",
+            "size": "209000",
+            "type": "dpkg",
+            "version": "2.37.2-4ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libss2",
+            "size": "113000",
+            "type": "dpkg",
+            "version": "1.46.5-2ubuntu1"
+        },
+        {
+            "license": "Apache-2.0 Artistic GPL-1+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libssl3",
+            "size": "5822000",
+            "type": "dpkg",
+            "version": "3.0.2-0ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libstdc++6",
+            "size": "2750000",
+            "type": "dpkg",
+            "version": "12-20220319-1ubuntu1"
+        },
+        {
+            "license": "LGPL-2.1+ CC0-1.0 GPL-2 Expat public-domain GPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libsystemd0",
+            "size": "992000",
+            "type": "dpkg",
+            "version": "249.11-0ubuntu3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libtasn1-6",
+            "size": "133000",
+            "type": "dpkg",
+            "version": "4.18.0-4build1"
+        },
+        {
+            "license": "MIT/X11 X11 BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libtinfo6",
+            "size": "558000",
+            "type": "dpkg",
+            "version": "6.3-2"
+        },
+        {
+            "license": "BSD-3-Clause GPL-2",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libtirpc-common",
+            "size": "32000",
+            "type": "dpkg",
+            "version": "1.3.2-2build1"
+        },
+        {
+            "license": "BSD-3-Clause GPL-2",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libtirpc3",
+            "size": "215000",
+            "type": "dpkg",
+            "version": "1.3.2-2build1"
+        },
+        {
+            "license": "LGPL-2.1+ CC0-1.0 GPL-2 Expat public-domain GPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libudev1",
+            "size": "344000",
+            "type": "dpkg",
+            "version": "249.11-0ubuntu3"
+        },
+        {
+            "license": "LGPL-3+ FreeSoftware GPL-3+ GPL-2+ MIT GFDL-1.2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libunistring2",
+            "size": "1746000",
+            "type": "dpkg",
+            "version": "1.0-1"
+        },
+        {
+            "license": "GPL-2+ GPL-2 GPL-3+ public-domain BSD-4-clause MIT BSD-2-clause BSD-3-clause LGPL-2+ LGPL-2.1+ LGPL LGPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libuuid1",
+            "size": "134000",
+            "type": "dpkg",
+            "version": "2.37.2-4ubuntu3"
+        },
+        {
+            "license": "BSD-2-clause GPL-2",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libxxhash0",
+            "size": "97000",
+            "type": "dpkg",
+            "version": "0.8.1-1"
+        },
+        {
+            "license": "BSD-3-clause zlib Expat GPL-2",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "libzstd1",
+            "size": "846000",
+            "type": "dpkg",
+            "version": "1.4.8+dfsg-3build1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "login",
+            "size": "888000",
+            "type": "dpkg",
+            "version": "1:4.8.1-2ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "logsave",
+            "size": "97000",
+            "type": "dpkg",
+            "version": "1.46.5-2ubuntu1"
+        },
+        {
+            "license": "GPL-2 BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "lsb-base",
+            "size": "58000",
+            "type": "dpkg",
+            "version": "11.1.0ubuntu4"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "mawk",
+            "size": "229000",
+            "type": "dpkg",
+            "version": "1.3.4.20200120-3"
+        },
+        {
+            "license": "GPL-2+ GPL-2 GPL-3+ public-domain BSD-4-clause MIT BSD-2-clause BSD-3-clause LGPL-2+ LGPL-2.1+ LGPL LGPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "mount",
+            "size": "389000",
+            "type": "dpkg",
+            "version": "2.37.2-4ubuntu3"
+        },
+        {
+            "license": "MIT/X11 X11 BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "ncurses-base",
+            "size": "393000",
+            "type": "dpkg",
+            "version": "6.3-2"
+        },
+        {
+            "license": "MIT/X11 X11 BSD-3-clause",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "ncurses-bin",
+            "size": "646000",
+            "type": "dpkg",
+            "version": "6.3-2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "passwd",
+            "size": "2321000",
+            "type": "dpkg",
+            "version": "1:4.8.1-2ubuntu2"
+        },
+        {
+            "license": "GPL-1+ Expat REGCOMP, GPL-3+-WITH-BISON-EXCEPTION Unicode BZIP ZLIB Artistic GPL-2+ RRA-KEEP-THIS-NOTICE BSD-3-clause-with-weird-numbering TEXT-TABS BSD-3-clause SDBM-PUBLIC-DOMAIN DONT-CHANGE-THE-GPL Artistic-dist LGPL-2.1 Artistic-2 BSD-4-clause-POWERDOG BSD-3-clause-GENERIC REGCOMP HSIEH-DERIVATIVE HSIEH-BSD",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "perl-base",
+            "size": "7775000",
+            "type": "dpkg",
+            "version": "5.34.0-3ubuntu1"
+        },
+        {
+            "license": "LGPL-2.1+ LGPL-2.0+ GPL-2.0+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "procps",
+            "size": "1388000",
+            "type": "dpkg",
+            "version": "2:3.3.17-6ubuntu2"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "sed",
+            "size": "328000",
+            "type": "dpkg",
+            "version": "4.8-1ubuntu2"
+        },
+        {
+            "license": "GPL-2+ All-permissive configure installsh",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "sensible-utils",
+            "size": "59000",
+            "type": "dpkg",
+            "version": "0.0.17"
+        },
+        {
+            "license": "GPL-2+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "sysvinit-utils",
+            "size": "83000",
+            "type": "dpkg",
+            "version": "3.01-1ubuntu1"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "tar",
+            "size": "956000",
+            "type": "dpkg",
+            "version": "1.34+dfsg-1build3"
+        },
+        {
+            "license": "Unknown",
+            "origin": "Dimitri John Ledkov <dimitri.ledkov@canonical.com> (maintainer)",
+            "package": "ubuntu-keyring",
+            "size": "41000",
+            "type": "dpkg",
+            "version": "2021.03.26"
+        },
+        {
+            "license": "GPL",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "usrmerge",
+            "size": "200000",
+            "type": "dpkg",
+            "version": "25ubuntu2"
+        },
+        {
+            "license": "GPL-2+ GPL-2 GPL-3+ public-domain BSD-4-clause MIT BSD-2-clause BSD-3-clause LGPL-2+ LGPL-2.1+ LGPL LGPL-3+",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "util-linux",
+            "size": "3399000",
+            "type": "dpkg",
+            "version": "2.37.2-4ubuntu3"
+        },
+        {
+            "license": "Zlib",
+            "origin": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com> (maintainer)",
+            "package": "zlib1g",
+            "size": "164000",
+            "type": "dpkg",
+            "version": "1:1.2.11.dfsg-2ubuntu9"
+        }
+    ],
+    "content_type": "os",
+    "imageDigest": "sha256:7faa2f6537dbba868190531e577772bde6874efbbd0dbbbe3898e13db2c86f20"
+}
