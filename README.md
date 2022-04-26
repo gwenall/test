@@ -25,9 +25,18 @@ It contains:
       wget -qO ~/.docker/cli-plugins/docker-buildx \
       https://github.com/docker/buildx/releases/download/v${BUILDX_VER}/buildx-v${BUILDX_VER}.linux-amd64 && \
       chmod +x /root/.docker/cli-plugins/docker-buildx
-  ```
+```
+
+
+
+Trivy scan :
+
+![image-20220427003015966](/home/gwen/git/lab/test/container/trivy-scan.png)
+
+
 
 ## Part 2: Text manipulation
+
 A show case between bash (script) and go (code)
 [more details here](./text-manipulation/Readme.md)
 
