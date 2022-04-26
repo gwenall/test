@@ -1,13 +1,53 @@
-# You can override the included template(s) by including variable overrides
-# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
-# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
-# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
-# Note that environment variables can be set in several places
-# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
-stages:
-- test
-sast:
-  stage: test
 include:
 - template: Security/SAST.gitlab-ci.yml
+
+stages:
+  - build
+  - scan
+  - deploy
+
+docker_build:
+  stage: build
+  services:
+    - name: docker:dind
+      command: ["dockerd", "--host=tcp://0.0.0.0:2375"]
+      alias: 'docker'
+  image: registry.gitlab.com/coinsmaster/common/containers/docker-buildx:master
+  before_script:
+    - mkdir -p ~/.docker
+    - echo "{\"auths\":{\"$DOCKER_REGISTRY\":{\"username\":\"$DOCKER_REGISTRY_USER\",\"password\":\"$DOCKER_REGISTRY_PASSWORD\"}}}" > ~/.docker/config.json
+    - docker buildx create --driver=docker-container --name=buildkit-builder --use
+    - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+  script: |
+      docker buildx build \
+            --platform linux/arm/v7,linux/arm64/v8,linux/amd64 \
+            --tag $CI_REGISTRY_IMAGE:latest \
+            --tag $CI_REGISTRY_IMAGE:${CI_COMMIT_SHORT_SHA} \
+            --tag $CI_REGISTRY_IMAGE:${CI_COMMIT_REF_NAME} \
+            --push \
+            .
+
+  variables:
+    DOCKER_IMAGE: $CI_REGISTRY_IMAGE
+    DOCKER_REGISTRY_USER: $CI_REGISTRY_USER
+    DOCKER_REGISTRY_PASSWORD: $CI_REGISTRY_PASSWORD
+    DOCKER_REGISTRY: $CI_REGISTRY
+    DOCKERFILE: $CI_PROJECT_DIR/Dockerfile
+    ARCHITECTURE: amd64
+
+sast:
+  stage: scan
+
+kube_deploy:
+  stage: deploy
+  allow_failure: false
+  variables:
+    PATH: "./deploy/"
+    NAMESPACE: "test"
+  image: bitnami/kubectl:1.22.9-debian-10-r5
+  before_script:
+    # getting secret from gitlab variables
+    - mkdir -p $HOME/.kube && echo $KUBE_CONFIG_DEV_GITLAB_USER | base64 -d > $HOME/.kube/config && chmod go-rwx $HOME/.kube/config
+  script:
+    - kubectl -n $NAMESPACE a
+    
