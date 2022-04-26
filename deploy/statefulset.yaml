@@ -23,9 +23,9 @@ spec:
         name: litecoin
         resources:
           requests:
-            memory: 100Mi
+            memory: 256Mi
           limits:
-            memory: 250Mi
+            memory: 1024Mi
         volumeMounts:
           - name: litecoin-data
             mountPath: /litecoin_data
